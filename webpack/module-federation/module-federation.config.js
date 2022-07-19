@@ -2,7 +2,9 @@ const { dependencies } = require('../../package.json')
 
 module.exports = {
   name: 'safe_remote_import',
-  remotes: {},
+  remotes: {
+    remote: 'remote@http://localhost:3001/remoteEntry.js'
+  },
   exposes: {},
   filename: 'remoteEntry.js',
   shared: {
